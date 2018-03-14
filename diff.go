@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"io"
-	"strings"
 	"math"
+	"strings"
 
 	"github.com/aryann/difflib"
 	"github.com/mgutz/ansi"
@@ -53,7 +53,7 @@ func printDiff(suppressedKinds []string, kind string, context int, before, after
 		for i, diff := range diffs {
 			if distances[i] > context {
 				if !omitting {
-					fmt.Fprintln(to, "...")
+					fmt.Fprintln(to, "---")
 					omitting = true
 				}
 			} else {
