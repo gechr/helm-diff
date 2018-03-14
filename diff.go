@@ -9,7 +9,7 @@ import (
 	"github.com/aryann/difflib"
 	"github.com/mgutz/ansi"
 
-	"github.com/databus23/helm-diff/manifest"
+	"github.com/gechr/helm-diff/manifest"
 )
 
 func diffManifests(oldIndex, newIndex map[string]*manifest.MappingResult, suppressedKinds []string, context int, to io.Writer) {
@@ -73,11 +73,11 @@ func printDiffRecord(diff difflib.DiffRecord, to io.Writer) {
 
 	switch diff.Delta {
 	case difflib.RightOnly:
-		fmt.Fprintf(to, "%s\n", ansi.Color("+ "+text, "green"))
+		fmt.Fprintf(to, "%s\n", ansi.Color("+"+text, "green"))
 	case difflib.LeftOnly:
-		fmt.Fprintf(to, "%s\n", ansi.Color("- "+text, "red"))
+		fmt.Fprintf(to, "%s\n", ansi.Color("-"+text, "red"))
 	case difflib.Common:
-		fmt.Fprintf(to, "%s\n", "  "+text)
+		fmt.Fprintf(to, "%s\n", " "+text)
 	}
 }
 

@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/helm/pkg/helm"
 
-	"github.com/databus23/helm-diff/manifest"
+	"github.com/gechr/helm-diff/manifest"
 )
 
 const globalUsage = `

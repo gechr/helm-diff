@@ -3,7 +3,7 @@
 # Shamelessly copied from https://github.com/technosophos/helm-template
 
 PROJECT_NAME="helm-diff"
-PROJECT_GH="databus23/$PROJECT_NAME"
+PROJECT_GH="gechr/$PROJECT_NAME"
 
 : ${HELM_PLUGIN_PATH:="$(helm home)/plugins/helm-diff"}
 
@@ -107,7 +107,7 @@ fail_trap() {
   result=$?
   if [ "$result" != "0" ]; then
     echo "Failed to install $PROJECT_NAME"
-    echo "\tFor support, go to https://github.com/databus23/helm-diff."
+    echo "\tFor support, go to https://github.com/gechr/helm-diff."
   fi
   exit $result
 }
