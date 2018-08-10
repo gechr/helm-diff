@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	. "github.com/databus23/helm-diff/manifest"
+	. "github.com/gechr/helm-diff/manifest"
 )
 
 func foundObjects(result map[string]*MappingResult) []string {

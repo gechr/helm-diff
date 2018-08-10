@@ -1,4 +1,4 @@
-package: github.com/databus23/helm-diff
+package: github.com/gechr/helm-diff
 import:
 - package: github.com/spf13/cobra
   version: 615425954c3b0d9485a7027d4d451fdcdfdee84e

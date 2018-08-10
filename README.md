@@ -151,11 +151,11 @@ Global Flags:
 ### Using Helm plugin manager (> 2.3.x)
 
 ```shell
-helm plugin install https://github.com/databus23/helm-diff --version master
+helm plugin install https://github.com/gechr/helm-diff --version master
 ```
 
 ### Pre Helm 2.3.0 Installation
-Pick a release tarball from the [releases](https://github.com/databus23/helm-diff/releases) page.
+Pick a release tarball from the [releases](https://github.com/gechr/helm-diff/releases) page.
 
 Unpack the tarball in your helm plugins directory (`$(helm home)/plugins`).
 
@@ -169,9 +169,9 @@ curl -L $TARBALL_URL | tar -C $(helm home)/plugins -xzv
 Clone the repository into your `$GOPATH` and then build it.
 
 ```
-$ mkdir -p $GOPATH/src/github.com/databus23/
-$ cd $GOPATH/src/github.com/databus23/
-$ git clone https://github.com/databus23/helm-diff.git
+$ mkdir -p $GOPATH/src/github.com/gechr/
+$ cd $GOPATH/src/github.com/gechr/
+$ git clone https://github.com/gechr/helm-diff.git
 $ cd helm-diff
 $ make install
 ```

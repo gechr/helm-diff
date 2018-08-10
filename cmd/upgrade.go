@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"errors"
-	"github.com/databus23/helm-diff/diff"
-	"github.com/databus23/helm-diff/manifest"
+	"github.com/gechr/helm-diff/diff"
+	"github.com/gechr/helm-diff/manifest"
 	"github.com/spf13/cobra"
 	"k8s.io/helm/pkg/helm"
 )

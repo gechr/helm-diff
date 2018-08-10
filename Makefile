@@ -2,7 +2,7 @@ HELM_HOME ?= $(shell helm home)
 HAS_GLIDE := $(shell command -v glide;)
 VERSION := $(shell sed -n -e 's/version:[ "]*\([^"]*\).*/\1/p' plugin.yaml)
 
-PKG:= github.com/databus23/helm-diff
+PKG:= github.com/gechr/helm-diff
 LDFLAGS := -X $(PKG)/cmd.Version=$(VERSION)
 
 # Clear the "unreleased" string in BuildMetadata
@@ -56,4 +56,4 @@ ifndef GITHUB_TOKEN
 	$(error GITHUB_TOKEN is undefined)
 endif
 	git push
-	github-release databus23/helm-diff v$(VERSION) master "v$(VERSION)" "release/*"
+	github-release gechr/helm-diff v$(VERSION) master "v$(VERSION)" "release/*"

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/databus23/helm-diff/cmd"
+	"github.com/gechr/helm-diff/cmd"
 )
 
 func main() {
