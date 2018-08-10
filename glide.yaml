@@ -5,7 +5,7 @@ import:
 - package: github.com/spf13/pflag
   version: 583c0c0531f06d5278b7d917446061adc344b5cd
 - package: k8s.io/helm
-  version: v2.9.0
+  version: v2.9.1
 #taken from k8s.io/helm hlide.yaml
 - package: k8s.io/api
   version: release-1.10
